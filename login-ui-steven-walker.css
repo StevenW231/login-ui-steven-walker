@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+h1 {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-family: 'BubblegumSans', cursive, sans-serif;
+  text-shadow: 2px 2px #444;
+}
+
+.sign-box {
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  min-width: 25vw;
+  min-height: 50vh;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  z-index: 1;
+  background: linear-gradient(36deg, rgba(238,174,202,1) 0%, rgba(148,183,233,1) 100%);
+  
+}
+
+#username, #password {
+  height: 50px;
+  width: 75%;
+  outline: none;
+  font-size: 19px;
+  margin-top: 20px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #444;
+  background-color:aliceblue
+}
+
+#sign-in-button {
+  margin-top: 30px;
+  height: 50px;
+  width: 75%;
+  font-size: 19px;
+  font-family: monospace;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #444;
+  background-color:aliceblue;
+  transition: box-shadow 0.15s;
+}
+
+#sign-in-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgba(148,183,233,1); 
+  opacity: 0.8;
+}
+
+#sign-in-button:active {
+  opacity: 0.5;
+}
